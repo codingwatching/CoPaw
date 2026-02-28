@@ -136,7 +136,7 @@ class ConversationRelayHandler:
             self.call_sid,
             spoken[:100],
         )
-        # In v0.1.0 we log the interruption but don't truncate context.
+        # We log the interruption but don't truncate context.
         # Future: truncate assistant message to what was actually spoken.
 
     async def _handle_dtmf(self, msg: dict) -> None:
